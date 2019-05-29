@@ -22,12 +22,11 @@
   Creation Date:  29/05/2019
   Purpose/Change:   Fix an error with the slmgr calls
                     Add key request as parameter
-					Initial script development
+					          Initial script development
 #>
 
 param (
 	[Parameter(Mandatory=$true)][string]$Key = $( Read-Host "Entrez la clef GVLK: ")
-
 )
 
 function RemoveKey {
