@@ -1,4 +1,8 @@
-﻿#Requires -RunAsAdministrator
+﻿param (
+	[Parameter(Mandatory=$true, Position=0)][string]$Key = $( Read-Host "Entrez la clef GVLK: ")
+)
+
+#Requires -RunAsAdministrator
 <#
 
 .SYNOPSIS
@@ -17,19 +21,17 @@
   convert.log à la racine du script.
 
 .NOTES
-  Version:        1.3
+  Version:        1.3.1
   Author:         tiphergane / meoowrwa
   Creation Date:  29/05/2019
-  Purpose/Change:   Add Transcript to log the magic
+  Purpose/Change:   Add Transcript to log the magic and make the param magic work
                     Fix an error with the slmgr calls
                     Add key request as parameter
                     Initial script development
 #>
 
 Start-Transcript -Path .\convert.log
-param (
-	[Parameter(Mandatory=$true, Position=0)][string]$Key = $( Read-Host "Entrez la clef GVLK: ")
-)
+
 
 function RemoveKey {
 
