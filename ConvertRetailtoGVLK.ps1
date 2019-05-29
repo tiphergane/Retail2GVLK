@@ -8,13 +8,13 @@
   Dans un Powershell en mode admin, éxecuter le script.
 
 .PARAMETER <Parameter_Name>
-  Key = clef GVLK de l'OS à convertir
+  
 
 .INPUTS
-  nada
+  Key = clef GVLK de l'OS à convertir
    
 .OUTPUTS
-  nada.
+  convert.log à la racine du script.
 
 .NOTES
   Version:        1.3
