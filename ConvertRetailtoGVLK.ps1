@@ -23,7 +23,7 @@
   Purpose/Change:   Add Transcript to log the magic
                     Fix an error with the slmgr calls
                     Add key request as parameter
-					Initial script development
+                    Initial script development
 #>
 
 Start-Transcript -Path .\convert.log
