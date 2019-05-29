@@ -17,16 +17,18 @@
   nada.
 
 .NOTES
-  Version:        1.2
+  Version:        1.3
   Author:         tiphergane / meoowrwa
   Creation Date:  29/05/2019
-  Purpose/Change:   Fix an error with the slmgr calls
+  Purpose/Change:   Add Transcript to log the magic
+                    Fix an error with the slmgr calls
                     Add key request as parameter
 					Initial script development
 #>
 
+Start-Transcript -Path .\convert.log
 param (
-	[Parameter(Mandatory=$true)][string]$Key = $( Read-Host "Entrez la clef GVLK: ")
+	[Parameter(Mandatory=$true, Position=0)][string]$Key = $( Read-Host "Entrez la clef GVLK: ")
 )
 
 function RemoveKey {
@@ -51,5 +53,5 @@ ConvertKey
 Write-Warning "Activation sur le KMS"
 Activate
 Write-host "Bonne journée"
-
+Stop-Transcript
 #Être con c'est comme être mort, c'est douloureux pour les autres.
