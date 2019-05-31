@@ -38,17 +38,17 @@ Start-Transcript -Path .\convert.log
 
 function RemoveKey {
 
-cscript C:\Windows\System32\slmgr.vbs -upk
+cscript C:\Windows\System32\slmgr.vbs //nologo -upk
 }
 
 function ConvertKey {
 
-cscript C:\Windows\System32\slmgr.vbs -ipk $Key
+cscript C:\Windows\System32\slmgr.vbs //nologo -ipk $Key
 }
 
 function Activate {
 
-cscript C:\Windows\System32\slmgr.vbs -ato
+cscript C:\Windows\System32\slmgr.vbs //nologo -ato
 }
 
 Write-Warning "suppression de l'ancienne clef"
