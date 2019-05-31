@@ -1,5 +1,5 @@
 ﻿param (
-	[Parameter(Mandatory=$true, Position=0, HelpMessage='ConvertRetailtoGVLK.ps1 -Key la-clef-windows')][string]$Key = $( Read-Host "Entrez la clef GVLK: ")
+  [Parameter(Mandatory=$true, Position=0, HelpMessage='ConvertRetailtoGVLK.ps1 -Key la-clef-windows')][string]$Key = $( Read-Host "Entrez la clef GVLK: ")
 )
 
 #Requires -RunAsAdministrator
