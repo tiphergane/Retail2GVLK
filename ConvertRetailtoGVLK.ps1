@@ -37,7 +37,7 @@
 # Démarre le log du script.
 Start-Transcript -Path .\convert.log
 
-
+#region fonction
 function RemoveKey {
 # Supprime la clef précédement installée
 cscript C:\Windows\System32\slmgr.vbs //nologo -upk
@@ -52,6 +52,7 @@ function Activate {
 # Active Windows auprès du serveur KMS
 cscript C:\Windows\System32\slmgr.vbs //nologo -ato
 }
+#endregion fonction
 
 Write-Warning "suppression de l'ancienne clef"
 RemoveKey
