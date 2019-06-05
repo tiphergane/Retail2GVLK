@@ -54,12 +54,12 @@ cscript C:\Windows\System32\slmgr.vbs //nologo -ato
 }
 #endregion fonction
 
-Write-Warning "suppression de l'ancienne clef"
+Write-Warning "[*] suppression de l'ancienne clef"
 RemoveKey
-Write-Warning "Conversion de la version de Windows ©"
+Write-Warning "[*] Conversion de la version de Windows ©"
 ConvertKey
-Write-Warning "Activation sur le KMS"
+Write-Warning "[*] Activation sur le KMS"
 Activate
-Write-host "Bonne journée"
+Write-host "[*] Bonne journée"
 Stop-Transcript
 #Être con c'est comme être mort, c'est douloureux pour les autres.
