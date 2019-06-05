@@ -55,9 +55,9 @@ cscript C:\Windows\System32\slmgr.vbs //nologo -ato
 #endregion fonction
 
 Write-Warning "suppression de l'ancienne clef"
-#RemoveKey
+RemoveKey
 Write-Warning "Conversion de la version de Windows ©"
-#ConvertKey
+ConvertKey
 Write-Warning "Activation sur le KMS"
 Activate
 Write-host "Bonne journée"
