@@ -35,7 +35,7 @@
 #>
 
 # Démarre le log du script.
-Start-Transcript -Path .\convert.log
+Start-Transcript -IncludeInvocationHeader=$false -Path .\convert.log
 
 #region fonction
 function RemoveKey {
